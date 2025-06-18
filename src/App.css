@@ -1,0 +1,69 @@
+/* General responsive container styles */
+body, #root, .App {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom, #faf8f9, #ffffff);
+}
+body, html {
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+/* Utility for main content padding */
+.main-content {
+  padding: 32px 8vw;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 24px 4vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding: 16px 2vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 8px 1vw;
+  }
+  body, #root, .App {
+    font-size: 14px;
+  }
+}
+/* Responsive banner styles */
+.shop-category-banner img,
+.hero-banner img,
+.banner-img,
+.banner {
+  width: 100%;
+  max-width: 100vw;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+/* Optional: limit banner height on small screens */
+@media (max-width: 768px) {
+  .shop-category-banner img,
+  .hero-banner img,
+  .banner-img,
+  .banner {
+    max-height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-category-banner img,
+  .hero-banner img,
+  .banner-img,
+  .banner {
+    max-height: 120px;
+  }
+}

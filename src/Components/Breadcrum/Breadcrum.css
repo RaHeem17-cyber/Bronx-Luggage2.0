@@ -1,0 +1,53 @@
+.breadcrum {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #5e5e5e;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 32px auto 40px auto;
+  padding: 10px 0;
+  max-width: 1200px;
+  width: 90%;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  letter-spacing: 0.02em;
+}
+
+.breadcrum a {
+  color: #222;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-weight: 500;
+}
+
+.breadcrum a:hover {
+  color: #e63946;
+  text-decoration: underline;
+}
+
+.breadcrum-separator {
+  color: #bdbdbd;
+  font-size: 18px;
+  font-weight: 400;
+  user-select: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .breadcrum {
+    font-size: 13px;
+    padding: 7px 0;
+    margin: 18px auto 20px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .breadcrum {
+    font-size: 11px;
+    padding: 4px 0;
+    margin: 8px auto 10px auto;
+    border-radius: 4px;
+  }
+}

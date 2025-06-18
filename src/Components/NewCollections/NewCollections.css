@@ -1,0 +1,80 @@
+.new-collections {
+  width: 100%;
+  padding: 40px 0 32px 0;
+  background: #f8f9fa;
+  text-align: center;
+  
+}
+
+.new-collections h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.new-collections hr {
+  width: 60px;
+  border: 2px solid #e63946;
+  margin: 0 auto 32px auto;
+  border-radius: 2px;
+}
+
+.collections {
+ display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  justify-items: center;    /* Center items horizontally in each grid cell */
+  align-items: center;      /* Center items vertically in each grid cell */
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px; 
+}
+/* ...existing code... */
+
+@media (max-width: 1024px) {
+  .new-collections {
+    padding: 28px 0 20px 0;
+  }
+  .new-collections h1 {
+    font-size: 1.5rem;
+  }
+  .collections {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .new-collections {
+    padding: 18px 0 12px 0;
+  }
+  .new-collections h1 {
+    font-size: 1.15rem;
+  }
+  .new-collections hr {
+    width: 40px;
+    margin-bottom: 18px;
+  }
+  .collections {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .new-collections {
+    padding: 10px 0 6px 0;
+  }
+  .new-collections h1 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+  .new-collections hr {
+    width: 24px;
+    margin-bottom: 10px;
+  }
+  .collections {
+    gap: 6px;
+    flex-direction: column;
+    align-items: center;
+  }
+}

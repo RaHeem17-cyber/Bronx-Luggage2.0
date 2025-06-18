@@ -1,0 +1,103 @@
+.popular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+.popular h1{
+    color:#171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+.popular hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+.popular-item{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+/* ...existing code... */
+
+@media (max-width: 1024px) {
+  .offers {
+    width: 90%;
+    padding: 0 40px;
+    height: 40vh;
+    margin-bottom: 80px;
+  }
+  .offers-left h1 {
+    font-size: 48px;
+  }
+  .offers-left p {
+    font-size: 18px;
+  }
+  .offers-left button {
+    width: 180px;
+    height: 48px;
+    font-size: 16px;
+  }
+  .offers-right {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offers {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 20px 10px;
+    margin-bottom: 40px;
+    gap: 18px;
+  }
+  .offers-left {
+    align-items: center;
+    text-align: center;
+  }
+  .offers-left h1 {
+    font-size: 32px;
+  }
+  .offers-left p {
+    font-size: 14px;
+  }
+  .offers-left button {
+    width: 120px;
+    height: 36px;
+    font-size: 12px;
+    margin-top: 16px;
+  }
+  .offers-right {
+    justify-content: center;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .offers {
+    width: 100%;
+    padding: 8px 2px;
+    margin-bottom: 18px;
+    gap: 10px;
+  }
+  .offers-left h1 {
+    font-size: 18px;
+  }
+  .offers-left p {
+    font-size: 10px;
+  }
+  .offers-left button {
+    width: 70px;
+    height: 22px;
+    font-size: 8px;
+    margin-top: 8px;
+    border-radius: 12px;
+  }
+  .offers-right {
+    padding-top: 4px;
+  }
+}

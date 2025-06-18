@@ -1,0 +1,124 @@
+.hero{
+    height: 100vh;
+    background: linear-gradient(180deg,#fde1ff,#e1ffea22 60% );
+    display: flex;
+}
+.hero-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+.hero-left h2{
+    color:#090909;
+    font-size: 26px;
+    font-weight: 600;
+}
+.hero-left p{
+    color: #171717;
+    font-size: 100px;
+    font-weight: 700;
+}
+.hero-hand-icon{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.hero-hand-icon img{
+    width: 105px;
+}
+.hero-latest-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 310px;
+    height: 70px;
+    border-radius:75px;
+    margin-top: 30px;
+    background: #ff4141;
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+}
+.hero-right{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .hero-left {
+    padding-left: 60px;
+  }
+  .hero-left p {
+    font-size: 60px;
+  }
+  .hero-latest-btn {
+    width: 220px;
+    height: 54px;
+    font-size: 22px;
+  }
+  .hero-hand-icon img {
+    width: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    height: auto;
+    padding: 32px 0;
+  }
+  .hero-left, .hero-right {
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-left {
+    gap: 14px;
+  }
+  .hero-left p {
+    font-size: 38px;
+  }
+  .hero-left h2 {
+    font-size: 20px;
+  }
+  .hero-latest-btn {
+    width: 160px;
+    height: 44px;
+    font-size: 16px;
+    margin-top: 18px;
+  }
+  .hero-hand-icon img {
+    width: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 16px 0;
+  }
+  .hero-left {
+    gap: 10px;
+  }
+  .hero-left p {
+    font-size: 24px;
+  }
+  .hero-left h2 {
+    font-size: 16px;
+  }
+  .hero-latest-btn {
+    width: 120px;
+    height: 36px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .hero-hand-icon img {
+    width: 32px;
+  }
+}
