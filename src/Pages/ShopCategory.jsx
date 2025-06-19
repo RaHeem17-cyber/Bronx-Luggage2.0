@@ -33,9 +33,7 @@ export const ShopCategory = (props) => {
           ) : null
         )}
       </div>
-      <div className="shopcategory-loadmore">
-        Explore More
-      </div>
+      
     </div>
   )
 }
