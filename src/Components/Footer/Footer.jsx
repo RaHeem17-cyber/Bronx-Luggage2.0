@@ -10,7 +10,7 @@ export const Footer = () => {
     <div className='footer'>
         <div className="footer-logo">
             <img src={footer_logo} alt="" />
-            <p>Bronx-Luggage</p>
+            <p>DC-Luggage</p>
         </div>
         <ul className="footer-links">
             <li>Company</li>
@@ -31,7 +31,7 @@ export const Footer = () => {
             </div>
         </div>
         <div className="footer-copyright">
-            <p>© 2025 Bronx-Luggage. All rights reserved.</p>   
+            <p>© 2025 DC-Luggage. All rights reserved.</p>   
          </div>   
     </div>
   )

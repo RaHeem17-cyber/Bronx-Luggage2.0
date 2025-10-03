@@ -8,8 +8,7 @@ export const Breadcrum = (props) => {
   return (
    <div className="breadcrum">
   <a href="/">Home</a>
-  <span className="breadcrum-separator">/</span>
-    <a href="/">Shop</a>
+
   <span className="breadcrum-separator">/</span>
   <a href="/mens">Men</a>
   <span className="breadcrum-separator">/</span>

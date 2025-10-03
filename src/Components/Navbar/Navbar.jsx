@@ -7,15 +7,22 @@ import { ShopContext } from '../../Context/ShopContext'
 
 export const Navbar = () => {
       const {getTotalCartItems} = useContext(ShopContext);
+      const [menuOpen, setMenuOpen] = useState(false);
+      const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+      };
   return (
     <div className='navbar'>
         <div className="nav-logo">
             <img src={logo} alt=""/>
-            <p>Bronx-Luggage</p>
+            <p>DC-Luggage</p>
         </div>
-        <ul className="nav-menu">
+        <div className="hambuger" onClick={toggleMenu}>
+            =
+        </div>
+        <ul className={`nav-menu ${menuOpen ? 'show' : ''}`}>
          
-           <Link  style={{textDecoration:'none'}} to="/" >Shop</Link>
+           <Link  style={{textDecoration:'none'}} to="/" > Home</Link>
            <Link  style={{textDecoration:'none'}} to="/mens">Men</Link>
            <Link  style={{textDecoration:'none'}} to="/womens">Women</Link>
            <Link  style={{textDecoration:'none'}} to="/accessorys">Accessory</Link>

@@ -1,3 +1,30 @@
+/* Pagination styles */
+.shopcategory-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 32px 0 24px 0;
+}
+.shopcategory-page-btn {
+  background: #fff;
+  border: 1px solid #e63946;
+  color: #e63946;
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.shopcategory-page-btn.active,
+.shopcategory-page-btn:hover {
+  background: #e63946;
+  color: #fff;
+}
+.shopcategory-page-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
 .shop-category {
   width: 100%;
   padding: 0;

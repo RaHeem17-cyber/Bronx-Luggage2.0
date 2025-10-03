@@ -46,7 +46,7 @@
 .nav-login-cart{
     display: flex;
     align-items: center;
-    gap: 45px;
+    gap: 15px;
 }
 .nav-login-cart button{
     width: 157px;
@@ -133,8 +133,34 @@
 .nav-menu a:hover::after {
   transform: scaleX(1);
 }
-/* ...existing code... */
 
+.hamburger {
+  display: none;
+  font-size: 48px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+}
 @media (max-width: 1024px) {
   .item {
     width: 180px;
